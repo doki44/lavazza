@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "Jost-Light";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Jost-Light.woff") format("woff"), url("../fonts/Jost-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Jost-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Jost-Regular.woff") format("woff"), url("../fonts/Jost-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "CormorantGaramond-Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/CormorantGaramond-Medium.woff") format("woff"), url("../fonts/CormorantGaramond-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "CormorantGaramond-SemiBold";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/CormorantGaramond-SemiBold.woff") format("woff"), url("../fonts/CormorantGaramond-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "CormorantGaramond-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/CormorantGaramond-Bold.woff") format("woff"), url("../fonts/CormorantGaramond-Bold.woff2") format("woff2");
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: "Jost-Regular";
+  font-size: 18px;
+  color: #000;
+  background: #FFF7ED;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+._title {
+  font-family: "CormorantGaramond-SemiBold";
+  font-size: 48px;
+  color: #000;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.top {
+  background-color: #000;
+  color: #fff;
+  padding-top: 66px;
+}
+.top__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.top__title {
+  margin-bottom: 30px;
+  font-size: 112px;
+  font-family: "CormorantGaramond-SemiBold";
+  text-transform: uppercase;
+}
+
+.header {
+  text-transform: uppercase;
+}
+.header__inner {
+  display: flex;
+}
+.header__logo {
+  margin-right: auto;
+  font-family: "CormorantGaramond-Bold";
+  font-size: 28px;
+}
+.header__menu-li {
+  display: inline-block;
+  margin-right: 42px;
+}
+.header__menu-li:last-child {
+  margin-right: 0;
+}
+
+.rent {
+  padding: 100px 0 50px;
+}
+
+.steps {
+  padding: 50px 0;
+}
+.steps__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px 100px;
+}
+.steps__item-title {
+  font-family: "Jost-Regular";
+}
+.steps__item-text {
+  font-family: "Jost-Light";
+}
+
+.contacts {
+  padding: 50px 0 100px;
+}
+.contacts__title {
+  font-family: "CormorantGaramond-SemiBold";
+  font-size: 112px;
+  margin-bottom: 90px;
+  text-align: right;
+}
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__map {
+  margin-right: 15px;
+}
+.contacts__descr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contacts__link {
+  max-width: 420px;
+}
+.contacts__li {
+  display: inline-block;
+  margin-right: 30px;
+}
+.contacts__li:last-child {
+  margin-right: 0;
+}
