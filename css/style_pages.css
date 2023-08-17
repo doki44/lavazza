@@ -76,6 +76,7 @@ ul {
 
 ._text {
   margin-bottom: 30px;
+  line-height: 35px;
 }
 
 .top {
@@ -102,11 +103,14 @@ ul {
 }
 .header__inner {
   display: flex;
+  align-items: center;
 }
 .header__logo {
-  margin-right: auto;
   font-family: "CormorantGaramond-Bold";
   font-size: 28px;
+}
+.header__menu {
+  transform: translateX(50%);
 }
 .header__menu-li {
   display: inline-block;
@@ -314,7 +318,7 @@ ul {
 }
 .slider .slick-arrow {
   position: absolute;
-  bottom: 20px;
+  bottom: -85px;
   left: 50%;
   font-family: "Jost-Regular";
   font-size: 18px;
@@ -373,7 +377,7 @@ ul {
   top: 9px;
 }
 .rent__feedback-btn {
-  padding: 25px 115px;
+  padding: 16px 115px;
   cursor: pointer;
   color: #FFF7ED;
   border: none;
@@ -558,7 +562,7 @@ ul {
   margin-right: 0;
 }
 .feedback__btn {
-  padding: 25px 115px;
+  padding: 16px 115px;
   cursor: pointer;
   color: #061320;
   border: none;

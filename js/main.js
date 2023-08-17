@@ -4,12 +4,15 @@ $('.header__burger').on("click", function(){
     $('.header__burger, .menu').toggleClass('_active');
 });
 
+// Якоря
+
 $('._anchor').click(function(e){
     e.preventDefault();
     let anchor = $(this).attr('href');
     $('html, body').animate({
         scrollTop: $(anchor).offset().top
     }, 600);
+    $('.header__burger, .menu').removeClass('_active');
 });
 
 // Анимация

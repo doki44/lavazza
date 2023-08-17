@@ -48,6 +48,7 @@ ul{
 
 ._text{
     margin-bottom: 30px;
+    line-height: 35px;
 }
 
 .top{
@@ -73,11 +74,14 @@ ul{
     text-transform: uppercase;
     &__inner{
         display: flex;
+        align-items: center;
     }
     &__logo{
-        margin-right: auto;
         font-family: 'CormorantGaramond-Bold';
         font-size: 28px;
+    }
+    &__menu{
+        transform: translateX(50%);
     }
     &__menu-li{
         display: inline-block;
@@ -293,7 +297,7 @@ ul{
     }
     .slick-arrow{
         position: absolute;
-        bottom: 20px;
+        bottom: -85px;
         left: 50%;
         font-family: 'Jost-Regular';
         font-size: 18px;
@@ -354,7 +358,7 @@ ul{
         }
     }
     &__feedback-btn{
-        padding: 25px 115px;
+        padding: 16px 115px;
         cursor: pointer;
         color: #FFF7ED;
         border: none;
@@ -554,7 +558,7 @@ ul{
         }
     }
     &__btn{
-        padding: 25px 115px;
+        padding: 16px 115px;
         cursor: pointer;
         color: #061320;
         border: none;
