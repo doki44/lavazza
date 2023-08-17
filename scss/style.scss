@@ -101,7 +101,10 @@ ul{
         left: 114px;
     }
     &__list-li{
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+        padding-bottom: 9px;
+        border-bottom: 1px solid transparent;
+        border-bottom-width: 100%;
     }
     &._active{
         top: 0;
@@ -119,17 +122,20 @@ ul{
     right: 0;
     z-index: -1;
     height: 100%;
+    // width: 100%;
 }
 
 .header{
     background: #FFF7ED;
     max-width: 35%;
     min-height: 100vh;
+    
     &__inner{
         min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        padding: 0 140px;
     }
     .logo{
         // display: flex;
@@ -139,7 +145,8 @@ ul{
         position: absolute;
         width: 30px;
         height: 30px;
-        top: 95px;
+        top: 83px;
+        left: 160px;
         z-index: 5;
         span{
             background-color: #000;
@@ -310,6 +317,10 @@ ul{
     ._title{
         color: #061320;
     }
+    &__contacts{
+        margin-bottom: 210px;
+        position: relative;
+    }
     &__contacts-inner{
         display: flex;
         justify-content: space-between;
@@ -327,6 +338,8 @@ ul{
         max-width: 420px;
         position: relative;
         height: 45px;
+        font-family: 'Jost-Light';
+        font-size: 22px;
         &._phone,
         &._place,
         &._clock{
@@ -343,6 +356,7 @@ ul{
             left: 0;
             top: 50%;
             transform: translateY(-50%);
+            transition: all .3s;
         }
         &._phone::before{
             background-image: url(../images/phone.svg);
@@ -360,6 +374,11 @@ ul{
         &:last-child{
             margin-right: 0;
         }
+    }
+    &__contacts-anchor{
+        position: absolute;
+        right: 0;
+        bottom: 0;
     }
     &__feedback-descr{
         color: #061320;
@@ -494,5 +513,28 @@ ul{
         font-size: 18px;
         font-family: 'Jost-Regular';
         max-width: 480px;
+    }
+}
+
+
+@media(min-width: 769px){
+    .menu__list-li:hover{
+        border-bottom: 1px solid #ECE7E3;
+        transition: all .3s;
+    }
+    .header__menu-link:hover{
+        color: #000;
+        transition: all .3s;
+    }
+    .footer__contacts-link{
+        &._phone:hover::before{
+            background-image: url(../images/phone-black.svg);
+        }
+        &._place:hover::before{
+            background-image: url(../images/place-black.svg);
+        }
+        &._clock:hover::before{
+            background-image: url(../images/clokc-black.svg);
+        }
     }
 }

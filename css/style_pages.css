@@ -137,6 +137,7 @@ ul {
 .contacts__inner {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .contacts__map {
   margin-right: 15px;
@@ -179,6 +180,11 @@ ul {
 }
 .contacts__li:last-child {
   margin-right: 0;
+}
+.contacts__anchor {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .description {
@@ -411,6 +417,7 @@ ul {
 }
 .steps__item-title {
   font-family: "Jost-Regular";
+  margin-bottom: 20px;
 }
 .steps__item-text {
   font-family: "Jost-Light";

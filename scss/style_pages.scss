@@ -108,6 +108,7 @@ ul{
     &__inner{
         display: flex;
         justify-content: space-between;
+        position: relative;
     }
     &__map{
         margin-right: 15px;
@@ -154,7 +155,12 @@ ul{
         &:last-child{
             margin-right: 0;
         }
-    }   
+    }  
+    &__anchor{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    } 
 }
 
 // О компании
@@ -393,6 +399,7 @@ ul{
     }
     &__item-title{
         font-family: 'Jost-Regular';
+        margin-bottom: 20px;
     }
     &__item-text{
         font-family: 'Jost-Light';

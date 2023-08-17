@@ -130,7 +130,10 @@ ul {
   left: 114px;
 }
 .menu__list-li {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid transparent;
+  border-bottom-width: 100%;
 }
 .menu._active {
   top: 0;
@@ -159,13 +162,15 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding: 0 140px;
 }
 .header__burger {
   cursor: pointer;
   position: absolute;
   width: 30px;
   height: 30px;
-  top: 95px;
+  top: 83px;
+  left: 160px;
   z-index: 5;
 }
 .header__burger span {
@@ -337,6 +342,10 @@ ul {
 .footer ._title {
   color: #061320;
 }
+.footer__contacts {
+  margin-bottom: 210px;
+  position: relative;
+}
 .footer__contacts-inner {
   display: flex;
   justify-content: space-between;
@@ -354,6 +363,8 @@ ul {
   max-width: 420px;
   position: relative;
   height: 45px;
+  font-family: "Jost-Light";
+  font-size: 22px;
 }
 .footer__contacts-link._phone, .footer__contacts-link._place, .footer__contacts-link._clock {
   padding-left: 50px;
@@ -367,6 +378,7 @@ ul {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  transition: all 0.3s;
 }
 .footer__contacts-link._phone::before {
   background-image: url(../images/phone.svg);
@@ -383,6 +395,11 @@ ul {
 }
 .footer__contacts-li:last-child {
   margin-right: 0;
+}
+.footer__contacts-anchor {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 .footer__feedback-descr {
   color: #061320;
@@ -507,4 +524,24 @@ ul {
   font-size: 18px;
   font-family: "Jost-Regular";
   max-width: 480px;
+}
+
+@media (min-width: 769px) {
+  .menu__list-li:hover {
+    border-bottom: 1px solid #ECE7E3;
+    transition: all 0.3s;
+  }
+  .header__menu-link:hover {
+    color: #000;
+    transition: all 0.3s;
+  }
+  .footer__contacts-link._phone:hover::before {
+    background-image: url(../images/phone-black.svg);
+  }
+  .footer__contacts-link._place:hover::before {
+    background-image: url(../images/place-black.svg);
+  }
+  .footer__contacts-link._clock:hover::before {
+    background-image: url(../images/clokc-black.svg);
+  }
 }
