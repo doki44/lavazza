@@ -98,9 +98,6 @@ ul {
   text-transform: uppercase;
 }
 
-.header {
-  text-transform: uppercase;
-}
 .header__inner {
   display: flex;
   align-items: center;
@@ -111,6 +108,8 @@ ul {
 }
 .header__menu {
   transform: translateX(50%);
+  text-transform: uppercase;
+  font-family: "Jost-Regular";
 }
 .header__menu-li {
   display: inline-block;
@@ -120,7 +119,7 @@ ul {
   margin-right: 0;
 }
 
-.text {
+._text {
   padding: 100px 0 50px;
   line-height: 35px;
 }
@@ -156,6 +155,7 @@ ul {
   padding-left: 50px;
 }
 .contacts__link._phone::before, .contacts__link._place::before, .contacts__link._clock::before {
+  transition: all 0.3s;
   position: absolute;
   content: "";
   background-repeat: no-repeat;
@@ -187,6 +187,17 @@ ul {
   bottom: 0;
 }
 
+@media (min-width: 769px) {
+  .contacts__link._phone:hover::before {
+    background-image: url(../images/phone-black.svg);
+  }
+  .contacts__link._place:hover::before {
+    background-image: url(../images/place-black.svg);
+  }
+  .contacts__link._clock:hover::before {
+    background-image: url(../images/clokc-black.svg);
+  }
+}
 .description {
   padding: 50px 0;
 }
@@ -305,6 +316,9 @@ ul {
 .slider__item-descr {
   max-width: 370px;
 }
+.slider__item-descr-p {
+  margin-bottom: 30px;
+}
 .slider__item-descr-link {
   color: #939393;
   position: relative;
@@ -335,14 +349,46 @@ ul {
   cursor: pointer;
 }
 .slider .slick-next {
-  transform: translateX(-70%);
+  transform: translateX(70%);
+}
+.slider .slick-next::before, .slider .slick-next::after {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 2px;
+  background-color: #000;
+  right: -14px;
+}
+.slider .slick-next::before {
+  transform: rotate(45deg);
+  top: 11px;
+}
+.slider .slick-next::after {
+  transform: rotate(-45deg);
+  bottom: 8px;
 }
 .slider .slick-prev {
-  transform: translateX(70%);
+  transform: translateX(-70%);
+}
+.slider .slick-prev::before, .slider .slick-prev::after {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 2px;
+  background-color: #000;
+  left: -14px;
+}
+.slider .slick-prev::before {
+  transform: rotate(-45deg);
+  top: 11px;
+}
+.slider .slick-prev::after {
+  transform: rotate(45deg);
+  bottom: 8px;
 }
 
 .rent {
-  padding: 140px 0 70px;
+  padding: 220px 0 70px;
 }
 .rent__feedback-form {
   display: flex;

@@ -71,7 +71,7 @@ ul{
 }
 
 .header{
-    text-transform: uppercase;
+    
     &__inner{
         display: flex;
         align-items: center;
@@ -82,6 +82,8 @@ ul{
     }
     &__menu{
         transform: translateX(50%);
+        text-transform: uppercase;
+        font-family: 'Jost-Regular';
     }
     &__menu-li{
         display: inline-block;
@@ -92,7 +94,7 @@ ul{
     }
 }
 
-.text{
+._text{
     padding: 100px 0 50px;  
     line-height: 35px;
 }
@@ -130,6 +132,7 @@ ul{
         &._phone::before,
         &._place::before,
         &._clock::before{
+            transition: all .3s;
             position: absolute;
             content: "";
             background-repeat: no-repeat;
@@ -161,6 +164,21 @@ ul{
         right: 0;
         bottom: 0;
     } 
+}
+
+@media(min-width: 769px){
+
+    .contacts__link{
+        &._phone:hover::before{
+            background-image: url(../images/phone-black.svg);
+        }
+        &._place:hover::before{
+            background-image: url(../images/place-black.svg);
+        }
+        &._clock:hover::before{
+            background-image: url(../images/clokc-black.svg);
+        }
+    }
 }
 
 // О компании
@@ -283,6 +301,9 @@ ul{
         &-descr{
             max-width: 370px;            
         }
+        &-descr-p{
+            margin-bottom: 30px;
+        }
         &-descr-link{
             color: #939393;
             position: relative;
@@ -314,16 +335,49 @@ ul{
         cursor: pointer;
     }
     .slick-next{
-        transform: translateX(-70%);
+        transform: translateX(70%);
+        &::before,
+        &::after{
+            position: absolute;
+            content: '';
+            width: 7px;
+            height: 2px;
+            background-color: #000;
+            right: -14px;
+        }
+    }
+    .slick-next::before{
+        transform: rotate(45deg);
+        top: 11px;
+    }
+    .slick-next::after{
+        transform: rotate(-45deg);
+        bottom: 8px;
     }
     .slick-prev{
-        transform: translateX(70%);
-        
+        transform: translateX(-70%);
+        &::before,
+        &::after{
+            position: absolute;
+            content: '';
+            width: 7px;
+            height: 2px;
+            background-color: #000;
+            left: -14px;
+        }
+    }
+    .slick-prev::before{
+        transform: rotate(-45deg);
+        top: 11px;
+    }
+    .slick-prev::after{
+        transform: rotate(45deg);
+        bottom: 8px;
     }
 }
 
 .rent{
-    padding: 140px 0 70px;
+    padding: 220px 0 70px;
     // text-align: center;
     &__feedback-form{
         display: flex;

@@ -151,6 +151,6 @@ document.addEventListener('keydown', function (e) {
 // Slider
 
 $('.slider').slick({
-    nextArrow: '<button type="button" class="slick-arrow slick-prev">далее</button>',
-    prevArrow: '<button type="button" class="slick-arrow slick-next">назад</button>',
+    nextArrow: '<button type="button" class="slick-arrow slick-next">далее</button>',
+    prevArrow: '<button type="button" class="slick-arrow slick-prev">назад</button>',
 });
