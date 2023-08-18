@@ -81,11 +81,13 @@ ul{
         font-size: 28px;
     }
     &__menu{
-        transform: translateX(50%);
+        transform: translateX(23%);
         text-transform: uppercase;
         font-family: 'Jost-Regular';
     }
     &__menu-li{
+        width: 131px;
+        font-size: 18px;
         display: inline-block;
         margin-right: 42px;
         &:last-child{
