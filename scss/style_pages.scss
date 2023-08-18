@@ -94,8 +94,7 @@ ul{
     }
 }
 
-._text{
-    padding: 100px 0 50px;  
+._text{ 
     line-height: 35px;
 }
 
@@ -109,7 +108,7 @@ ul{
     }
     &__inner{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         position: relative;
     }
     &__map{
@@ -124,6 +123,8 @@ ul{
         max-width: 420px;
         position: relative;
         height: 45px;
+        font-family: 'Jost-Light';
+        font-size: 22px;
         &._phone,
         &._place,
         &._clock{
@@ -182,6 +183,10 @@ ul{
 }
 
 // О компании
+
+.text{
+    padding: 100px 0 50px; 
+}
 
 .description{
     padding: 50px 0;
