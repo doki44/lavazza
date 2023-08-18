@@ -107,13 +107,15 @@ ul {
   font-size: 28px;
 }
 .header__menu {
-  transform: translateX(50%);
+  transform: translateX(23%);
   text-transform: uppercase;
   font-family: "Jost-Regular";
 }
 .header__menu-li {
-  display: inline-block;
-  margin-right: 42px;
+    width: 131px;
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 42px;
 }
 .header__menu-li:last-child {
   margin-right: 0;
