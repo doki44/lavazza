@@ -87,7 +87,6 @@ ul {
   color: #ECE7E3;
   max-width: 660px;
   margin-bottom: 30px;
-  line-height: 40px;
 }
 
 .show-more {
@@ -250,14 +249,17 @@ ul {
 .about {
   padding-bottom: 100px;
   min-height: 100vh;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transform: translateX(0);
 }
 
 .catalog {
   padding-bottom: 100px;
   min-height: 100vh;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -274,6 +276,9 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 100px;
+}
+.rent__inner-img canvas {
+  width: 95% !important;
 }
 
 .repair {

@@ -112,10 +112,10 @@ ul {
   font-family: "Jost-Regular";
 }
 .header__menu-li {
-    width: 131px;
-    font-size: 18px;
-    display: inline-block;
-    margin-right: 42px;
+  width: 131px;
+  font-size: 18px;
+  display: inline-block;
+  margin-right: 42px;
 }
 .header__menu-li:last-child {
   margin-right: 0;
