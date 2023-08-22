@@ -261,22 +261,6 @@ ul{
     }
 }
 
-.repair{
-    padding-bottom: 100px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    &__inner{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    &__img{
-        margin-right: 73px;
-    }
-}
-
 .sell-machine{
     min-height: 100vh;
     display: flex;
@@ -289,9 +273,30 @@ ul{
         justify-content: space-between;
     }
     &__img{
-        margin-right: 73px;
+        margin-left: 73px;
+        position: relative;
+        z-index: 2;
     }
 }
+
+.repair{
+    padding-bottom: 100px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__img{
+        margin-left: 73px;
+        position: relative;
+        z-index: 2;
+    }
+}
+
 
 .sell-tea{
     padding-bottom: 100px;
@@ -305,7 +310,8 @@ ul{
         align-items: center;
     }
     &__img{
-        margin-right: -27px;
+        position: relative;
+        z-index: 2;
     }
 }
 
@@ -321,7 +327,9 @@ ul{
         align-items: center;
     }
     &__img{
-        margin-right: 73px;
+        margin-left: 73px;
+        position: relative;
+        z-index: 2;
     }
 }
 

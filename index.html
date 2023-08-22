@@ -119,27 +119,24 @@
                     
                     <div class="sell-machine">
                         <div class="sell-machine__inner">
-                            <div class="sell-machine__img ">
-                                <img src="images/tablet-sell.png" alt="">
-                            </div>
                             <div class="sell-machine__text">
                                 <div class="_anim-items">
                                     <h1 class="_title _anim-show">Продажа кофемашин</h1>
                                 </div>
-                                <p class="_text">Наша компания занимается продажей наиболее востребованных моделей кофейных аппаратов. Мы поможем подобрать кофемашину под ваши нужды, учитывая предпочтения в функциях, видах приготавливаемого кофе 
-                                и примерной нагрузке в месяц."></p>
+                                <p class="_text">Наша компания занимается продажей наиболее востребованных моделей кофейных аппаратов. Мы поможем подобрать кофемашину под ваши нужды, учитывая предпочтения в функциях, видах приготавливаемого кофе и примерной нагрузке в месяц.                        
+                                </p>
                                 <div class="show-more">
                                     <a href="pages/catalog.html#rent" class="show-more-link _arrow">Узнать больше</a>
                                 </div>
+                            </div>
+                            <div class="sell-machine__img ">
+                                <img src="images/tablet-sell.png" alt="">
                             </div>
                         </div>
                     </div>
     
                     <div class="repair">
                         <div class="repair__inner">
-                            <div class="repair__img">
-                                <img src="images/Group 7.png" alt="">
-                            </div>
                             <div class="repair__text">
                                 <div class="_anim-items">
                                     <h1 class="_title _anim-show">Ремонт кофемашин</h1>
@@ -149,15 +146,15 @@
                                     <a href="pages/catalog.html#repair" class="show-more-link _arrow">Оставить заявку</a>
                                 </div>
                             </div>
+                            <div class="repair__img">
+                                <img src="images/Group 7.png" alt="">
+                            </div>
                         </div>
                     </div>
     
     
                     <div class="sell-tea">
                         <div class="sell-tea__inner">
-                            <div class="sell-tea__img">
-                                <img src="images/Group 98.png" alt="">
-                            </div>
                             <div class="sell-tea__text">
                                 <div class="_anim-items">
                                     <h1 class="_title _anim-show" style="width: 480px;">Продажа кофе и чая</h1>
@@ -167,14 +164,14 @@
                                     <a href="pages/shop.html" class="show-more-link _arrow">Узнать больше</a>
                                 </div>
                             </div>
+                            <div class="sell-tea__img">
+                                <img src="images/Group 98.png" alt="">
+                            </div>
                         </div>
                     </div>
-    
+                    
                     <div class="other">
                         <div class="other__inner">
-                            <div class="other__img">
-                                <img src="images/tablet-other.png" alt="">
-                            </div>
                             <div class="other__text">
                                 <div class="_anim-items">
                                     <h1 class="_title _anim-show">Прочие товары</h1>
@@ -183,6 +180,9 @@
                                 <div class="show-more">
                                     <a href="pages/shop.html" class="show-more-link _arrow">Узнать больше</a>
                                 </div>
+                            </div>
+                            <div class="other__img">
+                                <img src="images/tablet-other.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -316,7 +316,7 @@
                     new THREE.MeshBasicMaterial({color: "#ECE7E3"})
                 )
                 plain.reciveShadow = true;
-                plain.position.set(0, -1, 0)
+                plain.position.set(0, 1, 0)
                 plain.rotateX(-Math.PI / 2);
                 scene.add(plain)
             }

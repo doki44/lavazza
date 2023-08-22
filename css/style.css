@@ -281,22 +281,6 @@ ul {
   width: 95% !important;
 }
 
-.repair {
-  padding-bottom: 100px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.repair__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.repair__img {
-  margin-right: 73px;
-}
-
 .sell-machine {
   min-height: 100vh;
   display: flex;
@@ -310,7 +294,27 @@ ul {
   justify-content: space-between;
 }
 .sell-machine__img {
-  margin-right: 73px;
+  margin-left: 73px;
+  position: relative;
+  z-index: 2;
+}
+
+.repair {
+  padding-bottom: 100px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.repair__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.repair__img {
+  margin-left: 73px;
+  position: relative;
+  z-index: 2;
 }
 
 .sell-tea {
@@ -326,7 +330,8 @@ ul {
   align-items: center;
 }
 .sell-tea__img {
-  margin-right: -27px;
+  position: relative;
+  z-index: 2;
 }
 
 .other {
@@ -342,7 +347,9 @@ ul {
   align-items: center;
 }
 .other__img {
-  margin-right: 73px;
+  margin-left: 73px;
+  position: relative;
+  z-index: 2;
 }
 
 .footer {
