@@ -231,7 +231,18 @@ ul {
 
 .main {
   padding-top: 90px;
+}
 
+._anim-show {
+  transform: translate(120%, 0);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show._active,
+._active ._anim-show {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .about {
@@ -243,7 +254,6 @@ ul {
   justify-content: center;
 }
 
-
 .catalog {
   padding-bottom: 100px;
   min-height: 100vh;
@@ -251,22 +261,22 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
-
 
 .rent {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 .rent__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 100px;
+}
+.rent__inner-img canvas {
+  width: 95% !important;
 }
 
 .sell-machine {
@@ -275,12 +285,16 @@ ul {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 100px;
-
 }
 .sell-machine__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.sell-machine__img {
+  margin-left: 73px;
+  position: relative;
+  z-index: 2;
 }
 
 .repair {
@@ -289,7 +303,6 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 .repair__inner {
   display: flex;
@@ -308,7 +321,6 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 .sell-tea__inner {
   display: flex;
@@ -326,7 +338,6 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 .other__inner {
   display: flex;
