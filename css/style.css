@@ -48,7 +48,6 @@ body {
   font-size: 18px;
   background: #061320;
   color: #ECE7E3;
-  overflow-x: hidden;
 }
 
 a {
@@ -232,18 +231,11 @@ ul {
 
 .main {
   padding-top: 90px;
-}
-
-._anim-show {
-  transform: translate(120%, 0);
-  opacity: 0;
-  transition: all 0.8s ease 0s;
-}
-
-._anim-show._active,
-._active ._anim-show {
-  opacity: 1;
-  transform: translate(0, 0);
+  position: relative;
+  min-height: 100vh;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .about {
@@ -253,7 +245,13 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateX(0);
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+}
+.about._active {
+  opacity: 0;
+  overflow: hidden;
 }
 
 .catalog {
@@ -263,6 +261,15 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+.catalog._active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .rent {
@@ -270,6 +277,15 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+.rent._active {
+  opacity: 1;
+  visibility: visible;
 }
 .rent__inner {
   display: flex;
@@ -287,16 +303,20 @@ ul {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 100px;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+.sell-machine._active {
+  opacity: 1;
+  visibility: visible;
 }
 .sell-machine__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.sell-machine__img {
-  margin-left: 73px;
-  position: relative;
-  z-index: 2;
 }
 
 .repair {
@@ -305,6 +325,15 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+.repair._active {
+  opacity: 1;
+  visibility: visible;
 }
 .repair__inner {
   display: flex;
@@ -323,6 +352,15 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+.sell-tea._active {
+  opacity: 1;
+  visibility: visible;
 }
 .sell-tea__inner {
   display: flex;
@@ -340,6 +378,15 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+.other._active {
+  opacity: 1;
+  visibility: visible;
 }
 .other__inner {
   display: flex;
