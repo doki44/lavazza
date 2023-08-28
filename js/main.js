@@ -17,40 +17,40 @@ $('._anchor').click(function(e){
 
 // Анимация
 
-// const animItems = document.querySelectorAll('._anim-items');
+const animItems = document.querySelectorAll('._anim-items');
 
-// if (animItems.length > 0){
-//     window.addEventListener('scroll', animOnScroll);
-//     function animOnScroll(params) {
-//         for (let index = 0; index < animItems.length; index++) {
-//             const animItem = animItems[index];
-//             const animItemHeight = animItem.offsetHeight;
-//             const animItemOffset = offset(animItem).top;
-//             const animStart = 3;
+if (animItems.length > 0){
+     window.addEventListener('scroll', animOnScroll);
+     function animOnScroll(params) {
+         for (let index = 0; index < animItems.length; index++) {
+             const animItem = animItems[index];
+             const animItemHeight = animItem.offsetHeight;
+             const animItemOffset = offset(animItem).top;
+             const animStart = 3;
 
-//             let animItemPoint = window.innerHeight - animItemHeight / animStart;
+             let animItemPoint = window.innerHeight - animItemHeight / animStart;
 
-//             if(animItemHeight > window.innerHeight){
-//                 animItemPoint = window.innerHeight - window.innerHeight / animStart;
-//             }
+             if(animItemHeight > window.innerHeight){
+                 animItemPoint = window.innerHeight - window.innerHeight / animStart;
+             }
 
-//             if((pageYOffset > animItemOffset -animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)){
-//                 animItem.classList.add('_active');
-//             }else{
-//                 if (!animItem.classList.contains('_anim-no-hide')){
-//                     animItem.classList.remove('_active');
-//                 }
-//             }
-//         }
-//     }
-//     function offset(el) {
-//         const rect = el.getBoundingClientRect(),
-//         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-//         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-//         return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
-//     }
-//     animOnScroll();
-// };
+             if((pageYOffset > animItemOffset -animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)){
+                 animItem.classList.add('_active');
+             }else{
+                 if (!animItem.classList.contains('_anim-no-hide')){
+                     animItem.classList.remove('_active');
+                 }
+             }
+         }
+     }
+     function offset(el) {
+         const rect = el.getBoundingClientRect(),
+         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+         return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+     }
+     animOnScroll();
+ };
 
 // Попап
 
@@ -157,145 +157,145 @@ $('.slider').slick({
 
 // Боковая анимация
 
-$('.about').bind('mousewheel', function(e) {
-    if(e.originalEvent.wheelDelta /120 < 0){
-        e.preventDefault();
-        $('.catalog').addClass('_active');
-        $('.about').addClass('_active');    
-    }
-    else{
-        return false;
-    }
-});
+// $('.about').bind('mousewheel', function(e) {
+//     if(e.originalEvent.wheelDelta /120 < 0){
+//         e.preventDefault();
+//         $('.catalog').addClass('_active');
+//         $('.about').addClass('_active');    
+//     }
+//     else{
+//         return false;
+//     }
+// });
 
-$('.catalog').bind('mousewheel', function(e) {
-    if(e.originalEvent.wheelDelta /120 > 0){
-        e.preventDefault(); 
-        $('.catalog').removeClass('_active');
-        $('.about').removeClass('_active');    
-    }
-    else{
-        return false;
-    }
-});
+// $('.catalog').bind('mousewheel', function(e) {
+//     if(e.originalEvent.wheelDelta /120 > 0){
+//         e.preventDefault(); 
+//         $('.catalog').removeClass('_active');
+//         $('.about').removeClass('_active');    
+//     }
+//     else{
+//         return false;
+//     }
+// });
 
-$('.catalog').bind('mousewheel', function(e) {
-    if(e.originalEvent.wheelDelta /120 < 0){
-        e.preventDefault(); 
-        $('.catalog').removeClass('_active');
-        $('.rent').addClass('_active');    
-    }
-    else{
-        return false;
-    }
-});
+// $('.catalog').bind('mousewheel', function(e) {
+//     if(e.originalEvent.wheelDelta /120 < 0){
+//         e.preventDefault(); 
+//         $('.catalog').removeClass('_active');
+//         $('.rent').addClass('_active');    
+//     }
+//     else{
+//         return false;
+//     }
+// });
 
-$('.rent').bind('mousewheel', function(e) {
-    if(e.originalEvent.wheelDelta /120 > 0){
-        e.preventDefault();
-        $('.catalog').addClass('_active');
-        $('.rent').removeClass('_active');    
-    }
-    else{
-        return false;
-    }
-});
+// $('.rent').bind('mousewheel', function(e) {
+//     if(e.originalEvent.wheelDelta /120 > 0){
+//         e.preventDefault();
+//         $('.catalog').addClass('_active');
+//         $('.rent').removeClass('_active');    
+//     }
+//     else{
+//         return false;
+//     }
+// });
 
-$('.rent').bind('mousewheel', function(e) {
-    if(e.originalEvent.wheelDelta /120 < 0){
-        e.preventDefault();
-        $('.sell-machine').addClass('_active');
-        $('.rent').removeClass('_active');    
-    }
-    else{
-        return false;
-    }
-});
+// $('.rent').bind('mousewheel', function(e) {
+//     if(e.originalEvent.wheelDelta /120 < 0){
+//         e.preventDefault();
+//         $('.sell-machine').addClass('_active');
+//         $('.rent').removeClass('_active');    
+//     }
+//     else{
+//         return false;
+//     }
+// });
 
-$('.sell-machine').bind('mousewheel', function(e) {
-    if(e.originalEvent.wheelDelta /120 > 0){
-        e.preventDefault();
-        $('.sell-machine').removeClass('_active');
-        $('.rent').addClass('_active');    
-    }
-    else{
-        return false;
-    }
-});
+// $('.sell-machine').bind('mousewheel', function(e) {
+//     if(e.originalEvent.wheelDelta /120 > 0){
+//         e.preventDefault();
+//         $('.sell-machine').removeClass('_active');
+//         $('.rent').addClass('_active');    
+//     }
+//     else{
+//         return false;
+//     }
+// });
 
-$('.sell-machine').bind('mousewheel', function(e) {
-    if(e.originalEvent.wheelDelta /120 < 0){
-        e.preventDefault();
-        $('.sell-machine').removeClass('_active');
-        $('.repair').addClass('_active');    
-    }
-    else{
-        return false;
-    }
-});
+// $('.sell-machine').bind('mousewheel', function(e) {
+//     if(e.originalEvent.wheelDelta /120 < 0){
+//         e.preventDefault();
+//         $('.sell-machine').removeClass('_active');
+//         $('.repair').addClass('_active');    
+//     }
+//     else{
+//         return false;
+//     }
+// });
 
-$('.repair').bind('mousewheel', function(e) {
-    if(e.originalEvent.wheelDelta /120 > 0){
-        e.preventDefault();
-        $('.repair').removeClass('_active');
-        $('.sell-machine').addClass('_active');    
-    }
-    else{
-        return false;
-    }
-});
+// $('.repair').bind('mousewheel', function(e) {
+//     if(e.originalEvent.wheelDelta /120 > 0){
+//         e.preventDefault();
+//         $('.repair').removeClass('_active');
+//         $('.sell-machine').addClass('_active');    
+//     }
+//     else{
+//         return false;
+//     }
+// });
 
-$('.repair').bind('mousewheel', function(e) {
-    if(e.originalEvent.wheelDelta /120 < 0){
-        e.preventDefault();
-        $('.repair').removeClass('_active');
-        $('.sell-tea').addClass('_active');    
-    }
-    else{
-        return false;
-    }
-});
+// $('.repair').bind('mousewheel', function(e) {
+//     if(e.originalEvent.wheelDelta /120 < 0){
+//         e.preventDefault();
+//         $('.repair').removeClass('_active');
+//         $('.sell-tea').addClass('_active');    
+//     }
+//     else{
+//         return false;
+//     }
+// });
 
-$('.sell-tea').bind('mousewheel', function(e) {
-    if(e.originalEvent.wheelDelta /120 > 0){
-        e.preventDefault();
-        $('.sell-tea').removeClass('_active');
-        $('.repair').addClass('_active');    
-    }
-    else{
-        return false;
-    }
-});
+// $('.sell-tea').bind('mousewheel', function(e) {
+//     if(e.originalEvent.wheelDelta /120 > 0){
+//         e.preventDefault();
+//         $('.sell-tea').removeClass('_active');
+//         $('.repair').addClass('_active');    
+//     }
+//     else{
+//         return false;
+//     }
+// });
 
-$('.sell-tea').bind('mousewheel', function(e) {
-    if(e.originalEvent.wheelDelta /120 < 0){
-        e.preventDefault();
-        $('.other').addClass('_active');
-        $('.sell-tea').removeClass('_active');    
-    }
-    else{
-        return false;
-    }
-});
+// $('.sell-tea').bind('mousewheel', function(e) {
+//     if(e.originalEvent.wheelDelta /120 < 0){
+//         e.preventDefault();
+//         $('.other').addClass('_active');
+//         $('.sell-tea').removeClass('_active');    
+//     }
+//     else{
+//         return false;
+//     }
+// });
 
-$('.other').bind('mousewheel', function(e) {
-    if(e.originalEvent.wheelDelta /120 > 0){
-        e.preventDefault();
-        $('.other').removeClass('_active');
-        $('.sell-tea').addClass('_active');    
-    }
-    else{
-        return false;
-    }
-});
+// $('.other').bind('mousewheel', function(e) {
+//     if(e.originalEvent.wheelDelta /120 > 0){
+//         e.preventDefault();
+//         $('.other').removeClass('_active');
+//         $('.sell-tea').addClass('_active');    
+//     }
+//     else{
+//         return false;
+//     }
+// });
 
-$('.other').bind('mousewheel', function(e) {
-    if(e.originalEvent.wheelDelta /120 < 0){
-        //e.preventDefault();
-        // $('.other').removeClass('_active');
-        // $('.sell-tea').addClass('_active');    
-    }
-    else{
-        return false;
-    }
-});
+// $('.other').bind('mousewheel', function(e) {
+//     if(e.originalEvent.wheelDelta /120 < 0){
+//         e.preventDefault();
+//         $('.other').removeClass('_active');
+//         $('.sell-tea').addClass('_active');    
+//     }
+//     else{
+//         return false;
+//     }
+// });
