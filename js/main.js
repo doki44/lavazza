@@ -280,7 +280,7 @@ $('.sell-tea').bind('mousewheel', function(e) {
 
 $('.other').bind('mousewheel', function(e) {
     if(e.originalEvent.wheelDelta /120 > 0){
-        //e.preventDefault();
+        // e.preventDefault();
         $('.other').removeClass('_active');
         $('.sell-tea').addClass('_active');    
     }
