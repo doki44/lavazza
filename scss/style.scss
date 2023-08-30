@@ -309,12 +309,12 @@ ul{
         align-items: center;
         justify-content: space-between;
     }
-    &__descr{
-        display: flex;
-        ._text{
-            max-width: 570px;
-        }
-    }
+    // &__descr{
+    //     display: flex;
+    //     ._text{
+    //         max-width: 570px;
+    //     }
+    // }
     &__feedback-form{
         display: flex;
         margin-bottom: 60px;
@@ -394,7 +394,7 @@ ul{
     }
     &__feedback-descr{
         color: #061320;
-        max-width: 665px;
+        // max-width: 665px;
         margin-bottom: 90px;
     }
     &__feedback-form{
