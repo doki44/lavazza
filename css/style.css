@@ -331,10 +331,10 @@ ul {
 }
 /* .repair__descr {
   display: flex;
-}
-.repair__descr ._text {
-  max-width: 570px;
 } */
+.repair__descr ._text {
+  width: 100%;
+}
 .repair__feedback-form {
   display: flex;
   margin-bottom: 60px;
