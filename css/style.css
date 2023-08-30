@@ -329,12 +329,12 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
-.repair__descr {
+/* .repair__descr {
   display: flex;
 }
 .repair__descr ._text {
   max-width: 570px;
-}
+} */
 .repair__feedback-form {
   display: flex;
   margin-bottom: 60px;
