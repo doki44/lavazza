@@ -37,9 +37,6 @@
 
         <div class="header__burger">
             <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
         </div>
 
         <section class="top" id="top">            
@@ -47,7 +44,7 @@
                 <div class="container container__header">
                     <div class="header__inner">
                         <div class="logo">
-                            <a href="/" class="header__logo header__title">
+                            <a href="/" class="header__logo">
                                 <img src="images/logo.svg" alt="logo">
                             </a>
                         </div>
@@ -55,13 +52,16 @@
                             <nav class="header__menu">
                                 <ul class="header__menu-list">
                                     <li class="header__menu-li">
-                                        <p href="#" class="header__menu-link">Бесплатная аренда <br>кофемашин</p>
+                                        <a href="#rent" class="header__menu-link _anchor">Бесплатная аренда <br>кофемашин</a>
                                     </li>
                                     <li class="header__menu-li">
-                                        <p href="#" class="header__menu-link">Ремонт и сервис <br> кофемашин</p>
+                                        <a href="#sell-machine" class="header__menu-link _anchor">Продажа <br> кофемашин</a>
                                     </li>
                                     <li class="header__menu-li">
-                                        <p href="#" class="header__menu-link">Продажа кофе <br> и чая</p>
+                                        <a href="#repair" class="header__menu-link _anchor">Ремонт и сервис <br> кофемашин</a>
+                                    </li>
+                                    <li class="header__menu-li">
+                                        <a href="#sell-tea" class="header__menu-link _anchor">Продажа кофе <br> и чая</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -88,23 +88,16 @@
                         <div class="_anim-items">
                             <h1 class="_title _anim-show _anim-no-hide">О КОМПАНИИ</h1>
                         </div>
-                        <p class="_text">Кофейно-чайный бутик Lavazza является официальным дистрибьютером кофемашин Kaffit в Нижнем Новгороде и радует вас самым свежим и ароматным кофе уже более 20 лет. Помимо продажи кофе мы занимаемся ремонтом любых кофемашин. Вне зависимости от сложности неисправности наш мастер починит вашу кофемашину и в случае необходимости даст профессиональные советы по уходу. Мы проводим полную диагностику, чистку, декальцинацию, замену расходников, ремонт любой сложности, а также установку и текущее обслуживание кофемашин. Наша компания занимается продажей и предоставлением кофейного оборудования любого типа в бесплатную аренду с условием приобретения у нас кофе.</p>                        
+                        <div class="about__text">
+                            <p class="_text" style="margin-right: 40px;">Кофейно-чайный бутик Lavazza является официальным дистрибьютером кофемашин Kaffit в Нижнем Новгороде и радует вас самым свежим и ароматным кофе уже более 20 лет. Помимо продажи кофе мы занимаемся ремонтом любых кофемашин. Вне зависимости от сложности неисправности наш мастер починит вашу кофемашину и в случае необходимости даст профессиональные советы по уходу.</p>                        
+                            <p class="_text">Мы проводим полную диагностику, чистку, декальцинацию, замену расходников, ремонт любой сложности, а также установку и текущее обслуживание кофемашин. Наша компания занимается продажей и предоставлением кофейного оборудования любого типа в бесплатную аренду с условием приобретения у нас кофе.</p>                        
+                        </div>
                         <div class="show-more">
                             <a href="pages/about.html" class="show-more-link _arrow">Узнать больше</a>
                         </div>
                     </div>
     
-                    <div class="catalog">
-                        <div class="_anim-items">
-                            <h1 class="_title _anim-show">КАТАЛОГ УСЛУГ</h1>
-                        </div>
-                        <p class="_text">Мы предоставляем в бесплатную аренду автоматические современные кофемашины итальянского производства для домашнего, офисного и профессионального использования при условии покупки у нас кофе. Наш собственный магазин дает возможность приобретать широкий спектр расходных материалов, кофе и чая различных сортов, аксессуаров для приготовления кофе, а также различных ингредиентов, которые дадут возможность приготовить кофе на любой вкус!</p>
-                        <div class="show-more">
-                            <a href="#" class="show-more-link">Продолжайте прокручивать</a>
-                        </div>
-                    </div>
-    
-                    <div class="rent">
+                    <div class="rent" id="rent">
                         <div class="rent__inner">
                             <div class="rent__descr _anim-items">
                                 <div class="_anim-items">
@@ -121,8 +114,11 @@
                         </div>
                     </div>
                     
-                    <div class="sell-machine">
+                    <div class="sell-machine" id="sell-machine">
                         <div class="sell-machine__inner">
+                            <div class="sell-machine__img ">
+                                <img src="images/sell-machine.png" alt="">
+                            </div>
                             <div class="sell-machine__text">
                                 <div class="_anim-items">
                                     <h1 class="_title _anim-show">Продажа кофемашин</h1>
@@ -133,44 +129,46 @@
                                     <a href="pages/catalog.html#rent" class="show-more-link _arrow">Узнать больше</a>
                                 </div>
                             </div>
-                            <div class="sell-machine__img ">
-                                <img src="images/sell-machine.png" alt="">
-                            </div>
                         </div>
                     </div>
     
-                    <div class="repair">
+                    <div class="repair" id="repair">
                         <div class="repair__inner">
                             <div class="repair__text">
                                 <div class="_anim-items">
                                     <h1 class="_title _anim-show">Ремонт и сервис 
                                         кофемашин</h1>
                                 </div>
-                                <p class="_text">Осуществляем все виды ремонта, обслуживания и сервиса кофейных аппаратов - от небольших домашних девайсов до профессиональных кофейных машин и вендингов.</p>
-                                <div class="show-more">
-                                    <a href="pages/catalog.html#repair" class="show-more-link _arrow">Оставить заявку</a>
+                                <div class="repair__descr">
+                                    <p class="_text">Осуществляем все виды ремонта, обслуживания и сервиса кофейных аппаратов - от небольших домашних девайсов до профессиональных кофейных машин и вендингов.</p>
+                                    <p class="_text">Ваша кофемашина не включается, не подает воду или не мелет кофе? Укажите проблему, с которой вы столкнулись, в комментарии, и наш специалист тут же свяжется с вами!</p>
+                                </div>
+                                <form class="repair__feedback-form" action="#">
+                                    <input type="text" class="repair__feedback-input" placeholder="Имя">
+                                    <input type="text" class="repair__feedback-input" placeholder="Телефон*">
+                                    <input type="text" class="repair__feedback-input" placeholder="E-mail*">
+                                </form>
+                                <div class="repair__feedback-btns">
+                                    <a class="repair__feedback-btn popup__link" href="#popup">Оставить заявку</a>
                                 </div>
                             </div>
-                            <!-- <div class="repair__img">
-                                <img src="images/Group 7.png" alt="">
-                            </div> -->
                         </div>
                     </div>
     
     
-                    <div class="sell-tea">
+                    <div class="sell-tea" id="sell-tea">
                         <div class="sell-tea__inner">
+                            <div class="sell-tea__img">
+                                <img src="images/Group 98.png" alt="">
+                            </div>
                             <div class="sell-tea__text">
                                 <div class="_anim-items">
                                     <h1 class="_title _anim-show" style="width: 480px;">Продажа кофе и чая</h1>
                                 </div>
-                                <p class="_text">У нас вы можете купить как зерновой, так и кофе в капсулах для кофемашин. Линейка товаров различается по брендам, виду обжарки зерен и вкусовым качествам, особенно широко в нашем магазине представлен кофе Lavazza и Kimbo. Также вы можете приобрести чай, который представлен в широком ассортименте вкусов.</p>
+                                <p class="_text" style="min-width: 560px;">У нас вы можете купить как зерновой, так и кофе в капсулах для кофемашин. Линейка товаров различается по брендам, виду обжарки зерен и вкусовым качествам, особенно широко в нашем магазине представлен кофе Lavazza и Kimbo. Также вы можете приобрести чай, который представлен в широком ассортименте вкусов.</p>
                                 <div class="show-more">
                                     <a href="pages/shop.html" class="show-more-link _arrow">Узнать больше</a>
                                 </div>
-                            </div>
-                            <div class="sell-tea__img">
-                                <img src="images/Group 98.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -181,7 +179,7 @@
                                 <div class="_anim-items">
                                     <h1 class="_title _anim-show">Прочие товары</h1>
                                 </div>
-                                <p class="_text">В нашем фирменном магазине вы сможете найти широкий ассортимент товаров, связанных с приготовлением любимых напитков. Кофеварки, кофемолки, посуда для чая и кофе, а также различные аксессуары - все для того чтобы обычный перерыв на чай или кофе превратился в настоящую церемонию, а процесс приготовления стал максимально комфортным и быстрым.</p>
+                                <p class="_text" style="min-width: 570px;">В нашем фирменном магазине вы сможете найти широкий ассортимент товаров, связанных с приготовлением любимых напитков. Кофеварки, кофемолки, посуда для чая и кофе, а также различные аксессуары - все для того чтобы обычный перерыв на чай или кофе превратился в настоящую церемонию, а процесс приготовления стал максимально комфортным и быстрым.</p>
                                 <div class="show-more">
                                     <a href="pages/shop.html" class="show-more-link _arrow">Узнать больше</a>
                                 </div>
@@ -199,6 +197,19 @@
         <footer class="footer" id="contacts">
             <div class="container">
                 <div class="footer__contacts">
+                    <div class="footer__feedback">
+                        <h1 class="_title">Остались вопросы?</h1>
+                        <p class="footer__feedback-descr">На сайте представлена лишь меньшая часть ассортимента - всю линейку товаров вы можете увидеть в нашем магазине или уточнить по телефону. Оставьте заявку, и мы свяжемся с вами в ближайшее время.</p>
+                        <form class="footer__feedback-form" action="#">
+                            <input type="text" class="footer__feedback-input" placeholder="Имя">
+                            <input type="text" class="footer__feedback-input" placeholder="Телефон*">
+                            <input type="text" class="footer__feedback-input" placeholder="E-mail*">
+                        </form>
+                        <div class="footer__feedback-btns">
+                            <a href="pages/shop.html" class="footer__feedback-link _arrow">Перейти в магазин</a>
+                            <a class="footer__feedback-btn popup__link" href="#popup">Оставить заявку</a>
+                        </div>
+                    </div>
                     <h1 class="_title">КОНТАКТЫ</h1>
                     <div class="footer__contacts-inner">
                         <div class="footer__contacts-map">
@@ -241,19 +252,6 @@
                         <a href="#top" class="footer__contacts-anchor _anchor">
                             <img src="images/arrow-top.svg" alt="">
                         </a>
-                    </div>
-                </div>
-                <div class="footer__feedback">
-                    <h1 class="_title">Остались вопросы?</h1>
-                    <p class="footer__feedback-descr">На сайте представлена лишь меньшая часть ассортимента - всю линейку товаров вы можете увидеть в нашем магазине или уточнить по телефону. Оставьте заявку, и мы свяжемся с вами в ближайшее время.</p>
-                    <form class="footer__feedback-form" action="#">
-                        <input type="text" class="footer__feedback-input" placeholder="Имя">
-                        <input type="text" class="footer__feedback-input" placeholder="Телефон*">
-                        <input type="text" class="footer__feedback-input" placeholder="E-mail*">
-                    </form>
-                    <div class="footer__feedback-btns">
-                        <a href="pages/shop.html" class="footer__feedback-link _arrow">Перейти в магазин</a>
-                        <a class="footer__feedback-btn popup__link" href="#popup">Оставить заявку</a>
                     </div>
                 </div>
             </div>
