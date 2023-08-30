@@ -411,7 +411,7 @@ ul {
 }
 .footer__feedback-descr {
   color: #061320;
-  max-width: 665px;
+/*   max-width: 665px; */
   margin-bottom: 90px;
 }
 .footer__feedback-form {
