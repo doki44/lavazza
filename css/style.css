@@ -161,7 +161,7 @@ ul {
   padding-top: 80px;
 }
 .header__inner {
-  min-height: 100vh;
+/*   min-height: 100vh; */
   display: flex;
   flex-direction: column;
   padding-left: 140px;
