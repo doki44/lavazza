@@ -132,16 +132,16 @@ ul{
     background: #FFF7ED;
     width: 30%;
     min-height: 100vh;
-    
+    padding-top: 80px;
     &__inner{
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        // justify-content: space-evenly;
         padding-left: 140px;
     }
     .logo{
-        // display: flex;
+        margin-bottom: 110px;
     }
     &__burger{
         cursor: pointer;
@@ -209,6 +209,7 @@ ul{
         display: flex;
         align-items: center;
         height: 100%;
+        margin-bottom: 60px;
     }
     &__menu{
         color: #bababa;
@@ -258,8 +259,6 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-
 }
 
 .rent{
@@ -323,7 +322,7 @@ ul{
     &__feedback-input{
         width: 100%;
         margin-right: 25px;
-        padding: 16px 18px;
+        padding: 16px 25px;
         border-radius: 20px;
         border: none;
         outline: none;
@@ -405,7 +404,7 @@ ul{
     &__feedback-input{
         width: 100%;
         margin-right: 25px;
-        padding: 16px 18px;
+        padding: 16px 25px;
         border-radius: 20px;
         border: none;
         outline: none;
@@ -454,7 +453,7 @@ ul{
     }
     &__contacts-inner{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between ;
         color: #000;
     }
     &__contacts-map{

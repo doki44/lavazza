@@ -158,13 +158,16 @@ ul {
   background: #FFF7ED;
   width: 30%;
   min-height: 100vh;
+  padding-top: 80px;
 }
 .header__inner {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   padding-left: 140px;
+}
+.header .logo {
+  margin-bottom: 110px;
 }
 .header__burger {
   cursor: pointer;
@@ -230,6 +233,7 @@ ul {
   display: flex;
   align-items: center;
   height: 100%;
+  margin-bottom: 60px;
 }
 .header__menu {
   color: #bababa;
@@ -338,7 +342,7 @@ ul {
 .repair__feedback-input {
   width: 100%;
   margin-right: 25px;
-  padding: 16px 18px;
+  padding: 16px 25px;
   border-radius: 20px;
   border: none;
   outline: none;
@@ -417,7 +421,7 @@ ul {
 .footer__feedback-input {
   width: 100%;
   margin-right: 25px;
-  padding: 16px 18px;
+  padding: 16px 25px;
   border-radius: 20px;
   border: none;
   outline: none;
@@ -466,7 +470,7 @@ ul {
 }
 .footer__contacts-inner {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: #000;
 }
 .footer__contacts-map {
