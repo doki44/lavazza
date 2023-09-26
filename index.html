@@ -13,6 +13,10 @@
     <div class="wrapper">
 
         <div class="menu">
+            <div class="menu__contacts">
+                <a href="+7987550-55-50" class="menu__contacts-link">+7(987)550-55-50</a>
+                <p class="menu__contacts-p">Нижний Новгород</p>
+            </div>
             <ul class="menu__list">
                 <li class="menu__list-li">
                     <a href="pages/about.html" class="menu__list-li">О КОМПАНИИ</a>
@@ -108,7 +112,7 @@
                                     <a href="pages/catalog.html#rent" class="show-more-link _arrow">Узнать больше</a>
                                 </div>                                    
                             </div>
-                            <div class="rent__inner-img" style="margin-left: 70px;">
+                            <div class="rent__inner-img">
                                 <img src="images/rent.png" alt="">
                             </div>
                         </div>
@@ -116,7 +120,7 @@
                     
                     <div class="sell-machine" id="sell-machine">
                         <div class="sell-machine__inner">
-                            <div class="sell-machine__img" style="margin-right: 115px;">
+                            <div class="sell-machine__img ">
                                 <img src="images/sell-machine.png" alt="">
                             </div>
                             <div class="sell-machine__text">
@@ -140,12 +144,13 @@
                                         кофемашин</h1>
                                 </div>
                                 <div class="repair__descr">
-                                    <p class="_text">Осуществляем все виды ремонта, обслуживания и сервиса кофейных аппаратов - от небольших домашних девайсов до профессиональных кофейных машин и вендингов. Ваша кофемашина не включается, не подает воду или не мелет кофе? Укажите проблему, с которой вы столкнулись, в комментарии, и наш специалист тут же свяжется с вами!</p>
+                                    <p class="_text">Осуществляем все виды ремонта, обслуживания и сервиса кофейных аппаратов - от небольших домашних девайсов до профессиональных кофейных машин и вендингов.</p>
+                                    <p class="_text">Ваша кофемашина не включается, не подает воду или не мелет кофе? Укажите проблему, с которой вы столкнулись, в комментарии, и наш специалист тут же свяжется с вами!</p>
                                 </div>
                                 <form class="repair__feedback-form" action="#">
                                     <input type="text" class="repair__feedback-input" placeholder="Имя">
                                     <input type="text" class="repair__feedback-input" placeholder="Телефон*">
-                                    <input type="text" class="repair__feedback-input" placeholder="Комментарий">
+                                    <input type="text" class="repair__feedback-input" placeholder="E-mail*">
                                 </form>
                                 <div class="repair__feedback-btns">
                                     <a class="repair__feedback-btn popup__link" href="#popup">Оставить заявку</a>
@@ -157,16 +162,14 @@
     
                     <div class="sell-tea" id="sell-tea">
                         <div class="sell-tea__inner">
-                            <div class="sell-tea__img" style="margin-right: 55px;">
+                            <div class="sell-tea__img">
                                 <img src="images/Group 98.png" alt="">
                             </div>
                             <div class="sell-tea__text">
                                 <div class="_anim-items">
                                     <h1 class="_title _anim-show" style="width: 480px;">Продажа кофе и чая</h1>
                                 </div>
-                                <p class="_text" style="min-width: 560px;">У нас вы можете купить как зерновой, так и кофе в капсулах для кофемашин. Линейка товаров различается по брендам, виду
-                                обжарки зерен и вкусовым качествам, особенно широко в нашем магазине представлен кофе Lavazza и Kimbo. Также вы можете
-                                приобрести чай, который представлен в широком ассортименте вкусов.</p>
+                                <p class="_text" style="min-width: 560px;">У нас вы можете купить как зерновой, так и кофе в капсулах для кофемашин. Линейка товаров различается по брендам, виду обжарки зерен и вкусовым качествам, особенно широко в нашем магазине представлен кофе Lavazza и Kimbo. Также вы можете приобрести чай, который представлен в широком ассортименте вкусов.</p>
                                 <div class="show-more">
                                     <a href="pages/shop.html" class="show-more-link _arrow">Узнать больше</a>
                                 </div>
@@ -180,7 +183,7 @@
                                 <div class="_anim-items">
                                     <h1 class="_title _anim-show">Прочие товары</h1>
                                 </div>
-                                <p class="_text" style="min-width: 570px;">В нашем фирменном магазине вы сможете найти широкий ассортимент товаров, связанных с приготовлением любимых напитков. Кофеварки, кофемолки, посуда для чая и кофе, а также различные аксессуары - все для того чтобы обычный перерыв на чай или кофе превратился в настоящую церемонию, а процесс приготовления стал максимально комфортным и быстрым.</p>
+                                <p class="_text" style="min-width: 570px;">В нашем фирменном магазине вы сможете найти широкий ассортимент товаров, связанных с приготовлением любимых напитков. Кофеварки, кофемолки, посуда для чая contactsи кофе, а также различные аксессуары - все для того чтобы обычный перерыв на чай или кофе превратился в настоящую церемонию, а процесс приготовления стал максимально комфортным и быстрым.</p>
                                 <div class="show-more">
                                     <a href="pages/shop.html" class="show-more-link _arrow">Узнать больше</a>
                                 </div>
@@ -193,67 +196,97 @@
 
                 </div>
             </div>
-        </main>
-
-        <footer class="footer" id="contacts">
-            <div class="container">
-                <div class="footer__contacts">
-                    <div class="footer__feedback">
-                        <h1 class="_title">Остались вопросы?</h1>
-                        <p class="footer__feedback-descr">На сайте представлена лишь меньшая часть ассортимента - всю линейку товаров вы можете увидеть в нашем магазине или уточнить по телефону. Оставьте заявку, и мы свяжемся с вами в ближайшее время.</p>
-                        <form class="footer__feedback-form" action="#">
-                            <input type="text" class="footer__feedback-input" placeholder="Имя">
-                            <input type="text" class="footer__feedback-input" placeholder="Телефон*">
-                            <input type="text" class="footer__feedback-input" placeholder="Комментарий">
-                        </form>
-                        <div class="footer__feedback-btns">
-                            <a href="pages/shop.html" class="footer__feedback-link _arrow">Перейти в магазин</a>
-                            <a class="footer__feedback-btn popup__link" href="#popup">Оставить заявку</a>
-                        </div>
-                    </div>
-                    <h1 class="_title">КОНТАКТЫ</h1>
-                    <div class="footer__contacts-inner">
-                        <div class="footer__contacts-map">
-                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa5850e5d84382186413ffac1a0dd0517d2c0e212afb684ecf0c6272a27fcd406&amp;source=constructor" width="550" height="400" frameborder="0"></iframe>
-                        </div>
-                        <div class="footer__contacts-descr">
-                            <a class="footer__contacts-link _phone" href="tel:+79875505550">+7(987)550-55-50</a>
-                            <a class="footer__contacts-link _place" href="#">Нижний Новгород, ул. Ильинская 92, Магазин кофе и чая “Lavazza”</a>
-                            <a class="footer__contacts-link _clock" href="#">Пн-Пт (10-20), Сб-Вс (10-19)</a>
-                            <div class="footer__contacts-soc">
-                                <ul class="footer__contacts-list">
-                                    <li class="footer__contacts-li">
-                                        <a href="#" class="footer__contacts-link">
-                                            <img src="images/viber.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li class="footer__contacts-li">
-                                        <a href="#" class="footer__contacts-link">
-                                            <img src="images/whatsup.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li class="footer__contacts-li">
-                                        <a href="#" class="footer__contacts-link">
-                                            <img src="images/tg.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li class="footer__contacts-li">
-                                        <a href="#" class="footer__contacts-link">
-                                            <img src="images/ozon.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li class="footer__contacts-li">
-                                        <a href="#" class="footer__contacts-link">
-                                            <img src="images/market.png" alt="">
-                                        </a>
-                                    </li>
-                                </ul>
+            
+            <section class="contacts" id="contacts">
+                <div class="container">
+                    <div class="contacts__contacts">
+                        <div class="contacts__feedback">
+                            <h1 class="_title">Остались вопросы?</h1>
+                            <p class="contacts__feedback-descr">На сайте представлена лишь меньшая часть ассортимента - всю линейку товаров вы можете увидеть в нашем магазине или уточнить по телефону. Оставьте заявку, и мы свяжемся с вами в ближайшее время.</p>
+                            <form class="contacts__feedback-form" action="#">
+                                <input type="text" class="contacts__feedback-input" placeholder="Имя">
+                                <input type="text" class="contacts__feedback-input" placeholder="Телефон*">
+                                <input type="text" class="contacts__feedback-input" placeholder="E-mail*">
+                            </form>
+                            <div class="contacts__feedback-btns">
+                                <a href="pages/shop.html" class="contacts__feedback-link _arrow">Перейти в магазин</a>
+                                <a class="contacts__feedback-btn popup__link" href="#popup">Оставить заявку</a>
                             </div>
                         </div>
-                        <a href="#top" class="footer__contacts-anchor _anchor">
-                            <img src="images/arrow-top.svg" alt="">
-                        </a>
+                        <h1 class="_title">КОНТАКТЫ</h1>
+                        <div class="contacts__contacts-inner">
+                            <div class="contacts__contacts-map">
+                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa5850e5d84382186413ffac1a0dd0517d2c0e212afb684ecf0c6272a27fcd406&amp;source=constructor" width="550" height="400" frameborder="0"></iframe>
+                            </div>
+                            <div class="contacts__contacts-descr">
+                                <a class="contacts__contacts-link _phone" href="tel:+79875505550">+7(987)550-55-50</a>
+                                <a class="contacts__contacts-link _place" href="#">Нижний Новгород, ул. Ильинская 92,Магазин кофе и чая “Lavazza”</a>
+                                <a class="contacts__contacts-link _clock" href="#">Пн-Пт (10-20), Сб-Вс (10-19)</a>
+                                <div class="contacts__contacts-soc">
+                                    <ul class="contacts__contacts-list">
+                                        <li class="contacts__contacts-li">
+                                            <a href="#" class="contacts__contacts-link">
+                                                <img src="images/viber.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="contacts__contacts-li">
+                                            <a href="#" class="contacts__contacts-link">
+                                                <img src="images/whatsup.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="contacts__contacts-li">
+                                            <a href="#" class="contacts__contacts-link">
+                                                <img src="images/tg.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="contacts__contacts-li">
+                                            <a href="#" class="contacts__contacts-link">
+                                                <img src="images/ozon.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="contacts__contacts-li">
+                                            <a href="#" class="contacts__contacts-link">
+                                                <img src="images/market.png" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#top" class="contacts__contacts-anchor _anchor">
+                                <img src="images/arrow-top.svg" alt="">
+                            </a>
+                        </div>
                     </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a href="#top" class="footer__link _anchor">
+                        <img src="images/footer-logo.svg" alt="CoffeeNN">
+                    </a>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-li">
+                            <a href="pages/about.html" class="footer__menu-link">О компании</a>
+                        </li>
+                        <li class="footer__menu-li">
+                            <a href="pages/catalog.html" class="footer__menu-link">Аренда кофемашин</a>
+                        </li>
+                        <li class="footer__menu-li">
+                            <a href="pages/catalog.html" class="footer__menu-link">Продажа кофемашин</a>
+                        </li>
+                        <li class="footer__menu-li">
+                            <a href="pages/catalog.html" class="footer__menu-link">Ремонт кофемашин</a>
+                        </li>
+                        <li class="footer__menu-li">
+                            <a href="pages/shop.html" class="footer__menu-link">Магазин</a>
+                        </li>
+                        <li class="footer__menu-li">
+                            <a href="#contacts" class="footer__menu-link _anchor">Контакты</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </footer>

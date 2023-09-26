@@ -98,10 +98,18 @@ ul{
     font-family: 'CormorantGaramond-SemiBold';
     transition: all .3s;
     z-index: 2;
-    &__close{
+    &__contacts{
         position: absolute;
-        top: 180px;
-        left: 114px;
+        top: 70px;
+        right: 170px;
+        font-family: 'Jost-Regular';
+    }
+    &__contacts-link{
+        font-size: 28px;
+    }
+    &__contacts-p{
+        font-size: 20px;
+        text-align: right;
     }
     &__list-li{
         margin-bottom: 30px;
@@ -131,17 +139,17 @@ ul{
 .header{
     background: #FFF7ED;
     width: 30%;
-    // min-height: 100vh;
-    padding-top: 80px;
+    min-height: 100vh;
+    
     &__inner{
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-        // justify-content: space-evenly;
+        justify-content: space-evenly;
         padding-left: 140px;
     }
     .logo{
-        margin-bottom: 110px;
+        // display: flex;
     }
     &__burger{
         cursor: pointer;
@@ -209,7 +217,6 @@ ul{
         display: flex;
         align-items: center;
         height: 100%;
-        margin-bottom: 60px;
     }
     &__menu{
         color: #bababa;
@@ -259,6 +266,8 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+
 }
 
 .rent{
@@ -309,12 +318,12 @@ ul{
         align-items: center;
         justify-content: space-between;
     }
-    // &__descr{
-    //     display: flex;
-    //     ._text{
-    //         max-width: 570px;
-    //     }
-    // }
+    &__descr{
+        display: flex;
+        ._text{
+            max-width: 570px;
+        }
+    }
     &__feedback-form{
         display: flex;
         margin-bottom: 60px;
@@ -322,7 +331,7 @@ ul{
     &__feedback-input{
         width: 100%;
         margin-right: 25px;
-        padding: 16px 25px;
+        padding: 16px 18px;
         border-radius: 20px;
         border: none;
         outline: none;
@@ -383,7 +392,7 @@ ul{
     }
 }
 
-.footer{
+.contacts{
     background: #FFF7ED;
     padding: 145px 0;
     ._title{
@@ -394,7 +403,7 @@ ul{
     }
     &__feedback-descr{
         color: #061320;
-        // max-width: 665px;
+        max-width: 665px;
         margin-bottom: 90px;
     }
     &__feedback-form{
@@ -404,7 +413,7 @@ ul{
     &__feedback-input{
         width: 100%;
         margin-right: 25px;
-        padding: 16px 25px;
+        padding: 16px 18px;
         border-radius: 20px;
         border: none;
         outline: none;
@@ -453,7 +462,7 @@ ul{
     }
     &__contacts-inner{
         display: flex;
-        justify-content: space-between ;
+        justify-content: space-around;
         color: #000;
     }
     &__contacts-map{
@@ -509,6 +518,27 @@ ul{
         position: absolute;
         right: 0;
         bottom: 0;
+    }
+}
+
+.footer{
+    background-color: #061320;
+    padding: 70px 0;
+    color: #FFF7ED;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu{
+        display: flex;
+        &-li{
+            max-width: 96px;
+            margin-right: 60px;
+        }
+        &-li:last-child{
+            margin-right: 0;
+        }
     }
 }
 

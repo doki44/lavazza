@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О компании</title>
 
+    <link rel="stylesheet" href="../css/slick.css">
     <link rel="stylesheet" href="../css/style_pages.css">
     <link rel="stylesheet" href="../css/media_pages.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
 
 </head>
 <body>
@@ -17,7 +22,9 @@
             <div class="container">
                 <header class="header">
                     <div class="header__inner">
-                        <a href="../index.html" class="header__logo">CoffeeNN</a>
+                        <a href="../index.html" class="header__logo">
+                            <img src="../images/footer-logo.svg" alt="CoffeeNN">
+                        </a>
                         <nav class="header__menu">
                             <ul class="header__menu-list">
                                 <li class="header__menu-li">
@@ -124,36 +131,24 @@
             </div>
         </section>
 
-        <section class="partners">
-            <div class="container">
-                <h1 class="_title">ПАРТНЕРЫ</h1>
-            </div>
-            <div class="partners__inner">
-                <div class="partners__img">
-                    <img src="../images/partners.png" alt="">
-                </div>
-            </div>
-        </section>
-
         <section class="store">
             <div class="container">
                 <div class="store__inner">
                     <h1 class="_title">ФИРМЕННЫЙ МАГАЗИН</h1>
-                    <p class="_text" style="margin-bottom: 50px;">
-                        В нашем магазине представлен широкий ассортимент лучших сортов чая и кофе различной обжарки. У нас вы можете приобрести полную линейку ароматного итальянского кофе марки “Lavazza” (более 25 видов), более ста иных видов кофе, а также ингредиенты для приготовления ароматного напитка - топпинги, сиропы, сливки, а также сладости различного вида и стран производства. Помимо этого, наш магазин дает возможность приобрести все, что нужно для приготовления напитка - турки, френч-прессы, кофеварки, посуду для кофе и чая. Еще одна категория товаров, которую вы найдете в нашем магазине - материалы для заправки и обслуживания кофемашин: капсулы для систем Lep, Blue, Nespresso, Dolce Gusto, чистящие средства, инструменты для чистки. Кроме того мы продаем подарочные наборы, которыми вы сможете порадовать своих родных и близких. Сдать свою кофемашину в сервисный центр или купить все для приготовления настоящего кофе можно именно тут, по адресу ул. Ильинская, 92. Телефон магазина: +7(987)397-54-95, ждем ваших звонков!
-                    </p>
-                    <div class="store__images">
-                        <div class="store__images-item">
-                            <img src="../images/coffee.png" alt="">
-                        </div>
-                        <div class="store__images-item">
-                            <img src="../images/coffee.png" alt="">
-                        </div>
-                        <div class="store__images-item">
-                            <img src="../images/coffee.png" alt="">
-                        </div>
-                    </div>
+                    <p class="_text">В нашем магазине представлен широкий ассортимент лучших сортов чая и кофе различной обжарки. У нас вы можете приобрести полную линейку ароматного итальянского кофе марки “Lavazza” (более 25 видов), более ста иных видов кофе, а также ингредиенты для приготовления ароматного напитка - топпинги, сиропы, сливки, а также сладости различного вида и стран производства. Помимо этого, наш магазин дает возможность приобрести все, что нужно для приготовления напитка - турки, френч-прессы, кофеварки, посуду для кофе и чая. Еще одна категория товаров, которую вы найдете в нашем магазине - материалы для заправки и обслуживания кофемашин: капсулы для систем Lep, Blue, Nespresso, Dolce Gusto, чистящие средства, инструменты для чистки. Кроме того мы продаем подарочные наборы, которыми вы сможете порадовать своих родных и близких. Сдать свою кофемашину в сервисный центр или купить все для приготовления настоящего кофе можно именно тут, по адресу ул. Ильинская, 92. Телефон магазина: +7(987)397-54-95, ждем ваших звонков!</p>
                 </div>
+            </div>
+        </section>
+
+        <section class="store-swiper">
+            <div class="store-swiper__img">
+                <img src="../images/swiper-img1.png" alt="">
+            </div>
+            <div class="store-swiper__img">
+                <img src="../images/swiper-img2.png" alt="">
+            </div>
+            <div class="store-swiper__img">
+                <img src="../images/swiper-img3.png" alt="">
             </div>
         </section>
 
@@ -205,9 +200,40 @@
             </div>
         </section>
 
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a href="../index.html" class="footer__link">
+                        <img src="images/footer-logo.svg" alt="CoffeeNN">
+                    </a>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-li">
+                            <a href="./about.html" class="footer__menu-link">О компании</a>
+                        </li>
+                        <li class="footer__menu-li">
+                            <a href="./catalog.html" class="footer__menu-link">Аренда кофемашин</a>
+                        </li>
+                        <li class="footer__menu-li">
+                            <a href="./catalog.html" class="footer__menu-link">Продажа кофемашин</a>
+                        </li>
+                        <li class="footer__menu-li">
+                            <a href="./catalog.html" class="footer__menu-link">Ремонт кофемашин</a>
+                        </li>
+                        <li class="footer__menu-li">
+                            <a href="./shop.html" class="footer__menu-link">Магазин</a>
+                        </li>
+                        <li class="footer__menu-li">
+                            <a href="#contacts" class="footer__menu-link _anchor">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../js/slick.min.js"></script>
     <script src="../js/main.js"></script>
     
 </body>
