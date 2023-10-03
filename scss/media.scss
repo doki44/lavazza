@@ -1,9 +1,9 @@
 @media(min-width: 1140px){
-    .menu__list-li:hover{
+    .menu__list li:hover{
         border-bottom: 1px solid #ECE7E3;
         transition: all .3s;
     }
-    .header__menu-link::before{
+    .header__menu a::before{
         position: absolute;
         content: '';
         width: 0;
@@ -13,7 +13,7 @@
         background: transparent;
         transition: all .5s;
     }
-    .header__menu-link:hover{
+    .header__menu a:hover{
         color: #000;
         transition: all .5s;
         padding-left: 45px;
@@ -23,7 +23,7 @@
             width: 30px;
         }
     }
-    .footer__contacts-link{
+    .footer__menu a{
         &._phone:hover::before{
             background-image: url(../images/phone-black.svg);
         }
@@ -57,7 +57,7 @@
         &__list{
             padding-top: 210px;
         }
-        &__list-li{
+        &__list li{
             margin-bottom: 30px;
         }
     }
@@ -82,17 +82,17 @@
         &__menu{
             text-align: center;
         }
-        &__menu-li{
+        li{
             font-size: 24px;
         }
-        &__menu-link{
+        a{
             text-align: center;
             color: #000;
         }
-        &__menu-link br{
+        a br{
             display: none;
         }
-        &__menu-link::before{
+        a::before{
             display: none;
         }
         .arrow{
@@ -144,6 +144,12 @@
     }
     .repair__inner{
         flex-direction: column;
+    }
+    .rent__inner-img{
+        margin-top: 20px;
+    }
+    .sell-machine__img{
+        margin-top: 20px;
     }
     .repair__feedback-form{
         display: block;
@@ -201,7 +207,7 @@
         margin-right: 0;
         margin-bottom: 20px;
     }
-    .contacts__contacts-link{
+    .contacts__contacts-descr a{
         max-width: 100%;
         font-size: 16px;
         &._phone,
@@ -217,7 +223,7 @@
             height: 24px;
         }
     }
-    .contacts__contacts-li{
+    .contacts__contacts-descr li{
         margin-right: 13px;
     }
     .contacts__contacts-anchor{
@@ -231,7 +237,7 @@
         font-family: 'Jost-Regular';
         font-size: 16px;
     }
-    .footer__menu-li{
+    .footer__menu li{
         max-width: 100%;
         margin-right: 0;
         margin-bottom: 10px;
