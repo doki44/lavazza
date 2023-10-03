@@ -1,0 +1,230 @@
+@media (min-width: 1140px) {
+  .menu__list-li:hover {
+    border-bottom: 1px solid #ECE7E3;
+    transition: all 0.3s;
+  }
+  .header__menu-link::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 1px;
+    top: 17px;
+    left: 0;
+    background: transparent;
+    transition: all 0.5s;
+  }
+  .header__menu-link:hover {
+    color: #000;
+    transition: all 0.5s;
+    padding-left: 45px;
+    position: relative;
+  }
+  .header__menu-link:hover::before {
+    background: #000;
+    width: 30px;
+  }
+  .footer__contacts-link._phone:hover::before {
+    background-image: url(../images/phone-black.svg);
+  }
+  .footer__contacts-link._place:hover::before {
+    background-image: url(../images/place-black.svg);
+  }
+  .footer__contacts-link._clock:hover::before {
+    background-image: url(../images/clokc-black.svg);
+  }
+}
+@media (max-width: 1139px) {
+  .menu {
+    background: #000;
+    justify-content: flex-start;
+    font-size: 24px;
+    font-family: "Jost-Regular";
+  }
+  .menu__contacts {
+    left: 15px;
+    text-align: left;
+    top: 17px;
+  }
+  .menu__contacts-link {
+    font-size: 18px;
+  }
+  .menu__contacts-p {
+    text-align: left;
+    font-size: 18px;
+  }
+  .menu__list {
+    padding-top: 210px;
+  }
+  .menu__list-li {
+    margin-bottom: 30px;
+  }
+  .top {
+    display: block;
+  }
+  .header__burger {
+    right: 15px;
+    top: 28px;
+    background: transparent;
+  }
+  .header {
+    width: 100%;
+    padding: 40px 15px 0;
+  }
+  .header__inner {
+    padding-left: 0;
+    justify-content: flex-start;
+  }
+  .header .logo {
+    margin-bottom: 60px;
+  }
+  .header__menu {
+    text-align: center;
+  }
+  .header__menu-li {
+    font-size: 24px;
+  }
+  .header__menu-link {
+    text-align: center;
+    color: #000;
+  }
+  .header__menu-link br {
+    display: none;
+  }
+  .header__menu-link::before {
+    display: none;
+  }
+  .header .arrow {
+    display: flex;
+    justify-content: center;
+  }
+  .container__header {
+    max-width: 100%;
+  }
+  .menu__header {
+    justify-content: center;
+  }
+  .video {
+    position: relative;
+    width: 100%;
+  }
+  ._title {
+    font-size: 41px;
+    margin-bottom: 20px;
+  }
+  ._text {
+    font-size: 16px;
+  }
+  .about {
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .about__text {
+    display: block;
+  }
+  .about__text ._text:last-child {
+    display: none;
+  }
+  .rent__inner {
+    flex-direction: column;
+  }
+  .sell-machine__inner {
+    flex-direction: column-reverse;
+  }
+  .repair__descr {
+    display: block;
+  }
+  .repair__descr ._text:first-child {
+    display: none;
+  }
+  .repair__inner {
+    flex-direction: column;
+  }
+  .repair__feedback-form {
+    display: block;
+  }
+  .repair__feedback-input {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .repair__feedback-btn {
+    padding: 16px 80px;
+  }
+  .sell-tea ._title {
+    width: 100%;
+  }
+  .sell-tea ._text {
+    min-width: 100%;
+  }
+  .sell-tea__inner {
+    flex-direction: column;
+  }
+  .sell-tea__img {
+    display: none;
+  }
+  .other__inner {
+    flex-direction: column;
+  }
+  .other__inner ._text {
+    min-width: 100%;
+  }
+  .other__img {
+    display: none;
+  }
+  .contacts__feedback-form {
+    display: block;
+  }
+  .contacts__feedback-input {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .contacts__feedback-link {
+    display: none;
+  }
+  .contacts__feedback-btn {
+    padding: 16px 83px;
+  }
+  .contacts__contacts-inner {
+    flex-direction: column;
+  }
+  .contacts__contacts-inner iframe {
+    width: 100%;
+  }
+  .contacts__contacts-map {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .contacts__contacts-link {
+    max-width: 100%;
+    font-size: 16px;
+  }
+  .contacts__contacts-link._phone, .contacts__contacts-link._place, .contacts__contacts-link._clock {
+    padding-left: 35px;
+  }
+  .contacts__contacts-link._phone::before, .contacts__contacts-link._place::before, .contacts__contacts-link._clock::before {
+    top: 13px;
+    width: 24px;
+    height: 24px;
+  }
+  .contacts__contacts-li {
+    margin-right: 13px;
+  }
+  .contacts__contacts-anchor {
+    display: none;
+  }
+  .footer__inner {
+    align-items: start;
+  }
+  .footer__menu {
+    display: block;
+    font-family: "Jost-Regular";
+    font-size: 16px;
+  }
+  .footer__menu-li {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .footer__menu-li:last-child {
+    margin-bottom: 0;
+  }
+}
