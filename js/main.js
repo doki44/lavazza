@@ -2,6 +2,7 @@
 
 $('.header__burger').on("click", function(){
     $('.header__burger, .menu').toggleClass('_active');
+    $('body').toggleClass('lock');
 });
 
 // Якоря
