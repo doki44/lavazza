@@ -1,7 +1,7 @@
 // Меню
 
 $('.header__burger').on("click", function(){
-    $('.header__burger, .menu').toggleClass('_active');
+    $('.header__burger, .menu, .header__menu').toggleClass('_active');
     $('body').toggleClass('lock');
 });
 
@@ -154,4 +154,14 @@ document.addEventListener('keydown', function (e) {
 $('.slider__items').slick({
     infinite: false,
     dots: false,
+    arrows: true,
+    responsive: [
+        {
+            breakpoint: 1000,
+            settings: {
+                arrows: false,
+                dots: true,
+            }
+        }
+    ]
 });

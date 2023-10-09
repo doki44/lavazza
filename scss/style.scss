@@ -15,7 +15,7 @@ html{
 }
 
 body{
-    min-width: 320px;
+    min-width: 360px;
     font-family: 'Jost-Regular';
     font-size: 18px;
     background: #061320;
@@ -540,11 +540,11 @@ ul{
     }
     &__menu{
         display: flex;
-        &-li{
+        li{
             max-width: 96px;
             margin-right: 60px;
         }
-        &-li:last-child{
+        li:last-child{
             margin-right: 0;
         }
     }

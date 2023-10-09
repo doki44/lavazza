@@ -49,8 +49,7 @@ html {
 }
 
 body {
-  min-width: 320px;
-  overflow-x: hidden;
+  min-width: 360px;
   font-family: "Jost-Regular";
   font-size: 18px;
   color: #000;
@@ -93,6 +92,7 @@ ul {
   background: #061320;
   color: #fff;
   padding-top: 66px;
+  margin-bottom: 150px;
 }
 .top__inner {
   display: flex;
@@ -121,6 +121,9 @@ ul {
   text-transform: uppercase;
   font-family: "Jost-Regular";
 }
+.header__contacts {
+  display: none;
+}
 .header__menu-li {
   width: 131px;
   font-size: 18px;
@@ -129,6 +132,9 @@ ul {
 }
 .header__menu-li:last-child {
   margin-right: 0;
+}
+.header__burger {
+  display: none;
 }
 
 ._text {
@@ -161,7 +167,7 @@ ul {
   max-width: 420px;
   position: relative;
   height: 45px;
-  font-family: "Jost-Light";
+  font-family: "Jost-Regular";
   font-size: 22px;
 }
 .contacts__link._phone, .contacts__link._place, .contacts__link._clock {
@@ -172,8 +178,9 @@ ul {
   position: absolute;
   content: "";
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -221,17 +228,6 @@ ul {
   margin-right: 0;
 }
 
-@media (min-width: 769px) {
-  .contacts__link._phone:hover::before {
-    background-image: url(../images/phone-black.svg);
-  }
-  .contacts__link._place:hover::before {
-    background-image: url(../images/place-black.svg);
-  }
-  .contacts__link._clock:hover::before {
-    background-image: url(../images/clokc-black.svg);
-  }
-}
 .text {
   padding: 100px 0 50px;
 }
@@ -299,8 +295,8 @@ ul {
 .advantages__grid-item::before {
   position: absolute;
   content: "";
-  width: 100%;
-  height: 100%;
+  width: 30px;
+  height: 36px;
   background-image: url(../images/coffee-seed.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -326,27 +322,6 @@ ul {
   width: 100%;
 }
 
-.image-mini-slider__slide {
-  opacity: 0.8;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.image-mini-slider__image {
-  position: relative;
-  padding-top: 30%;
-  cursor: pointer;
-}
-.image-mini-slider__image img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
 .slider__descr {
   padding-bottom: 60px;
   font-size: 18px;
@@ -354,6 +329,9 @@ ul {
 .slider__descr-p {
   font-family: "Jost-Regular";
   max-width: 775px;
+}
+.slider__descr-p span {
+  font-family: "Jost-Medium";
 }
 
 .slider {
@@ -424,6 +402,9 @@ ul {
 .slider__item-btn:last-child {
   margin-right: 0;
 }
+.slider__item-img img {
+  max-width: 100%;
+}
 .slider .slick-arrow {
   position: absolute;
   top: 50%;
@@ -477,17 +458,37 @@ ul {
   gap: 0px 100px;
 }
 .steps__item {
+  padding-top: 120px;
   position: relative;
 }
 .steps__item:nth-child(1)::before, .steps__item:nth-child(2)::before {
   content: "";
   position: absolute;
-  top: 15px;
+  top: 130px;
   left: 100%;
   background-image: url(../images/arrow-right-black.svg);
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+}
+.steps__item._call::after, .steps__item._deliv::after, .steps__item._support::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85px;
+  height: 85px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.steps__item._call::after {
+  background-image: url(../images/call.svg);
+}
+.steps__item._deliv::after {
+  background-image: url(../images/deliv.svg);
+}
+.steps__item._support::after {
+  background-image: url(../images/support.svg);
 }
 .steps__item-title {
   font-family: "Jost-Regular";
@@ -509,10 +510,6 @@ ul {
 .repair__item {
   padding: 25px 0;
   font-family: "Jost-Medium";
-}
-.repair__item:hover .repair__hidden {
-  opacity: 1;
-  visibility: visible;
 }
 .repair__item:nth-child(1) {
   border-top: 1px solid #000;

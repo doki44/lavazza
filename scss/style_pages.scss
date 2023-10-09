@@ -15,8 +15,7 @@ html{
 }
 
 body{
-    min-width: 320px;
-    overflow-x: hidden;
+    min-width: 360px;
     font-family: 'Jost-Regular';
     font-size: 18px;
     color: #000;
@@ -59,6 +58,7 @@ ul{
     background: #061320;
     color: #fff;
     padding-top: 66px;
+    margin-bottom: 150px;
     // position: relative;
     &__inner{
         display: flex;
@@ -90,6 +90,9 @@ ul{
         text-transform: uppercase;
         font-family: 'Jost-Regular';
     }
+    &__contacts{
+        display: none;
+    }
     &__menu-li{
         width: 131px;
         font-size: 18px;
@@ -98,6 +101,9 @@ ul{
         &:last-child{
             margin-right: 0;
         }
+    }
+    &__burger{
+        display: none;
     }
 }
 
@@ -130,7 +136,7 @@ ul{
         max-width: 420px;
         position: relative;
         height: 45px;
-        font-family: 'Jost-Light';
+        font-family: 'Jost-Regular';
         font-size: 22px;
         &._phone,
         &._place,
@@ -144,8 +150,9 @@ ul{
             position: absolute;
             content: "";
             background-repeat: no-repeat;
-            width: 100%;
-            height: 100%;
+            background-size: contain;
+            width: 24px;
+            height: 24px;
             left: 0;
             top: 50%;
             transform: translateY(-50%);
@@ -191,21 +198,6 @@ ul{
         }
         &-li:last-child{
             margin-right: 0;
-        }
-    }
-}
-
-@media(min-width: 769px){
-
-    .contacts__link{
-        &._phone:hover::before{
-            background-image: url(../images/phone-black.svg);
-        }
-        &._place:hover::before{
-            background-image: url(../images/place-black.svg);
-        }
-        &._clock:hover::before{
-            background-image: url(../images/clokc-black.svg);
         }
     }
 }
@@ -276,8 +268,8 @@ ul{
             &::before{
                 position: absolute;
                 content: '';
-                width: 100%;
-                height: 100%;
+                width: 30px;
+                height: 36px;
                 background-image: url(../images/coffee-seed.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -306,36 +298,6 @@ ul{
     }
 }
 
-.image-slider{
-    // padding: 30px 0 70px 0;
-}
-
-.image-mini-slider__slide{
-    opacity: 0.8;
-    margin-right: 20px;
-    margin-bottom: 20px;
-
-    // transition: opacity .3s ease;
-}
-
-.image-mini-slider__image{
-    position: relative;
-    padding-top: 30%;
-    cursor: pointer;
-    img{
-        object-fit: contain;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        // width: 98px;
-        // height: 98px;
-    }
-}
-
-
-
 // Каталог
 
 .slider__descr{
@@ -344,6 +306,9 @@ ul{
     &-p{
         font-family: 'Jost-Regular';
         max-width: 775px;
+    }
+    &-p span{
+        font-family: 'Jost-Medium';
     }
 }
 
@@ -414,6 +379,9 @@ ul{
         &-btn:last-child{
             margin-right: 0;
         }
+        &-img img{
+            max-width: 100%;
+        }
     }
     .slick-arrow{
         position: absolute;
@@ -468,17 +436,39 @@ ul{
         gap: 0px 100px;
     }
     &__item{
+        padding-top: 120px;
         position: relative;
         &:nth-child(1)::before,
         &:nth-child(2)::before{
             content: "";
             position: absolute;
-            top: 15px;
+            top: 130px;
             left: 100%;
             background-image: url(../images/arrow-right-black.svg);
             background-repeat: no-repeat;
             width: 100%;
             height: 100%;
+        }
+        &._call::after,
+        &._deliv::after,
+        &._support::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 85px;
+            height: 85px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        &._call::after{
+            background-image: url(../images/call.svg);
+        }
+        &._deliv::after{
+            background-image: url(../images/deliv.svg);
+        }
+        &._support::after{
+            background-image: url(../images/support.svg);
         }
     }
     &__item-title{
@@ -501,10 +491,7 @@ ul{
     &__item{
         padding: 25px 0;
         font-family: 'Jost-Medium';
-        &:hover .repair__hidden{
-            opacity: 1;
-            visibility: visible;
-        }
+
     }
     &__item:nth-child(1){
         border-top: 1px solid #000;
